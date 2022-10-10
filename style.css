@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --bg-color-1: #fffbf5;
+    --bg-color-2: #8a663f;
+    --bg-color-3: #9db7be;
+    --bg-color-4: #b4b0ab;
+    --padding: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--bg-color-2);
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+footer {
+    padding: var(--padding);
+    background-color: var(--bg-color-2);
+}
+
+table {
+    padding: 0 !important;
+}
+
+.--section-hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+}
+
+section {
+    transition: all ease-in-out 1s;
+}
+
+#header {
+    background-color: var(--bg-color-1);
+    height: 100vh;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.--sticky {
+    background-color: rgba(138, 102, 63, 0.9);
+    box-shadow: 1px 1px var(--bg-color-4);
+}
+
+.--sticky a {
+    color: #fff;
+}
+
+.--hero {
+    padding: var(--padding);
+}
+
+.--my-name {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.--my-name h1 {
+    font-weight: bold;
+}
+
+.--reach-out {
+    padding: 6px 12px;
+    border: 0;
+    color: #fff;
+    background-color: var(--bg-color-2);
+    margin-top: 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+.--reach-out:hover {
+    background-color: var(--bg-color-3);
+    color: var(--bg-color-2);
+}
+
+.--my-pic {
+    background-color: var(--bg-color-3);
+    height: 90%;
+    width: 70%;
+    /* border-top-left-radius: 50%;
+    border-top-right-radius: 50%; */
+    border-radius: 50%;
+}
+
+.--about-img {
+    height: 80%;
+    width: 80%;
+}
+
+.--about-img img {
+    height: 70%;
+    width: 70%;
+}
+
+.--my-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.--about-img img {
+    z-index: -100;
+}
+
+
+#about {
+    padding: var(--padding);
+}
+
+#education {
+    padding: var(--padding);
+}
+
+#experience {
+    padding: var(--padding);
+    background-color: var(--bg-color-1);
+}
+
+.--experience-heading {
+    text-align: center;
+}
+
+.--work-content {
+    margin-top: 50px;
+}
+
+.--work-details-left {
+    border-right: 1px solid var(--bg-color-4);
+    text-align: right;
+    padding-right: 50px;
+    position: relative;
+    height: 100%;
+}
+
+.--circle-briefcase {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-color-2);
+    color: var(--bg-color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    right: 0%;
+    top: 0%;
+    z-index: 10;
+    transform: translateX(50%);
+}
+
+.--work-details {
+    padding-left: 35px;
+}
+
+#skills {
+    padding: var(--padding);
+}
+
+.--skills-main-heading {
+    margin-bottom: 50px;
+}
+
+.--technical-skills-table td{
+   padding: 6px 0 6px 0;
+}
+
+.--technical-skills-table {
+    margin-top: 50px;
+    width: 100%;
+}
+
+i[class*="fa-star"] {
+    color: gold;
+}
+
+/* tr:nth-last-of-type(2n) {
+    background-color: var(--bg-color-2);
+} */
+
+
+#projects {
+    padding: var(--padding);
+    background-color: var(--bg-color-1);
+}
+
+
+footer p, footer h6, footer h5, footer hr{
+    color: #fff;
+}
+
+.--social-media-icons {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+i[class*="instagram"] {
+    color: #fb3958;
+    margin-right: 20px;
+}
+
+i[class*="facebook"] {
+    color: #4267B2;
+    margin-right: 20px;
+}
+
+i[class*="linkedin"] {
+    color: #0072b1;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:476px) {
+    .--hero, #about, #education, #experience, #skills, #projects, #contact {
+        padding: 40px;
+    }
+    .--my-pic {
+        width: 100%;
+        height: 100%;
+    }
+    #experience {
+        padding: 80px 20px;
+    }
+
+    .--circle-briefcase {
+        opacity: 0;
+    }
+    .--work-details-left {
+        border: none;
+        text-align: justify;
+    }
+
+    .--work-heading, .--work-place {
+        font-size: 1rem;
+    }
+
+    .--work-details-left p {
+        font-size: 0.5rem;
+    }
+
+    .--work-details ul li {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.8rem !important;
+    }
+
+    .--education-details h3{
+        font-size: 1rem;
+    }
+
+    .--skills-subheading h4{
+        font-size: 1rem;
+    }
+
+    .--personal-heading {
+        margin-top: 40px;
+    }
+
+    .--technical-skills-table td {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:670px) { 
+    #experience {
+        padding: 80px 20px;
+    }
+
+    .--circle-briefcase {
+        opacity: 0;
+    }
+    .--work-details-left {
+        border: none;
+        text-align: justify;
+    }
+}
