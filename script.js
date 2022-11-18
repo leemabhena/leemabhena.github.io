@@ -66,7 +66,7 @@ sectionObserver = new IntersectionObserver(sectionRevealer, {
   threshold: 0.15,
 })
 
-// select the sections
+// // select the sections
 sections = document.querySelectorAll("section");
 
 // make sections invisible, a
@@ -83,3 +83,44 @@ footer = document.querySelector("footer");
 btnReachOut.addEventListener("click", e => {
   footer.scrollIntoView({behavior:"smooth"});
 })
+
+
+///////////////////////////////////////
+// Projects section
+const imageHoverEls = document.querySelectorAll(".img-hover");
+
+// Create the hover effect
+imageHoverEls.forEach((el) => {
+  const which = el.dataset.which;
+  hoverEffect(el,which);
+
+})
+
+
+function hoverEffect(element, which) {
+  const imgOverlay = document.querySelector(`[data-which*='${which}'] .img-overlay`);
+  const viewEl = document.querySelector(`[data-which*='${which}'] .view`);
+  // add classes listener on mouse enter
+  element.addEventListener("mouseover", ()=> {
+  imgOverlay.classList.add("visible");
+  viewEl.classList.add("visible");
+  // add click event to preview
+  const previewEl = element.querySelector(".see");
+  const projectInfo = document.querySelector(`.project-${which}`);
+  previewEl.addEventListener("click", () => {
+    projectInfo.classList.add("visible");
+  })
+  // close 
+  const closeEl = projectInfo.querySelector(".close");
+  // Hide the modal
+  closeEl.addEventListener("click", ()=> {
+    projectInfo.classList.remove("visible");
+  })
+})
+// remove classes on mouse leave
+  element.addEventListener("mouseout", ()=> {
+  imgOverlay.classList.remove("visible");
+  viewEl.classList.remove("visible");
+})
+}
+
