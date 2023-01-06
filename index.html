@@ -4,166 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Mabhena</title>
-    <!-- css  -->
+    <title>Lee Mabhena | Portfolio</title>
+    <script defer src="script.js" type="module"></script>
+
+    <!-- Materialize -->
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+     <!-- favicon -->
+     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+     <link rel="manifest" href="images/favicon_io/site.webmanifest">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- rough animation -->
+     <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+
+     <!-- GSAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+     <!-- Typed js -->
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     
 </head>
 <body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#header">Home</a>
-                  </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
+    <section class="hero">
+        <nav>
+            <div class="nav-wrapper">
+              <a href="" class="brand-logo logo">Port<span>folio</span></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down nav-container">
+                <!-- <li class="nav-btn">Education</li> -->
+                <li class="nav-btn">Experience</li>
+                <li class="nav-btn">Skills</li>
+                <li class="nav-btn">Projects</li>
+                <li class="nav-btn">Contact</li>
+              </ul>
             </div>
           </nav>
-          <div class="--hero">
-            <div class="row">
-                <div class="col-6">
-                    <div class="--my-pic">
-                        <img src="images/my-pic.png" alt="My picture">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="--my-name">
-                        <h1>Liberty (Lee) Mabhena</h1>
-                        <p>Computer Science | Statistics</p>
-                      <button class="--reach-out">Reach Out</button>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </header>
+        
+          <ul class="sidenav sidenav-close" id="mobile-demo">
+            <!-- <li>Education</li> -->
+            <li>Experience</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
 
-    <!-- <section id="about">
-        <div class="row">
-            <div class="col-6">
-                <div class="--about-content">
-                    <p>Who am I</p>
-                    <h2>About Me</h2>
-                    <hr class="--rule">
-                    <p>
-                        Iam a sophomore at Williams College, class of 2025. I intend to double major
-                        in Computer Science and Statistics.
-                    </p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="--about-img">
-                    <img src="images/about.png" alt="About me image">
-                </div>
-            </div>
+        <div class="intro">
+            <p class="hi-text hero-p">Hi my name is,</p>
+            <p class="name hero-p">Liberty (Lee) Mabhena</p>
+            <p class="courses hero-p">Computer Science | Statistics</p>
+            <p class="desc-text hero-p">
+                I am a student intending to double major in computer science and statistics. 
+                I am excited to be at this point in my academic career, as I have already gained 
+                a strong foundation in both of my major fields and am now able to delve deeper into 
+                more advanced coursework. My passion for computer science began when I first learned 
+                about coding and the power it has to solve problems and create innovative solutions. 
+                Similarly, my interest in statistics developed as I learned about the role it plays in
+                making data-driven decisions and understanding complex phenomena. I am eager to continue
+                my studies in both computer science and statistics, and to explore the ways in which these 
+                disciplines can work together to address real-world challenges.
+            </p>
+            <button class="view-work hero-p">View Work <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="social-media-icons">
+            <ul>
+                <li class="social-icon in"> <a href="https://www.linkedin.com/in/liberty-lee-mabhena-466259178/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="social-icon gt"><a href=" https://github.com/leemabhena"><i class="fa-brands fa-github"></i></a></li>
+                <li class="social-icon fb"><a href="https://www.facebook.com/liberty.mabhena.56/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="social-icon mail"><i class="fa-solid fa-envelope"></i> <span>lnm1@williams.edu</span></li>
+            </ul>
+        </div>
+       
+    </section>
+  
+    <!-- <section class="education">
+        <div class="education-details">
+            <h3 class="headings"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
         </div>
     </section> -->
-    <section id="education">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="--heading">
-                    <h2>Education</h2>
-                    <hr class="--rule">
-                </div>
-            </div>
-            <div class="col-md-2">
-                <p class="--year">
-                    2021 - 2025
-                </p>
-            </div>
-            <div class="col-md-7">
-                <div class="--education-details">
-                    <div class="--first-school">
-                        <h3> 
-                            Bachelor's degree in Computer Science and Statistics
-                        </h3>
-                        <p class="--school">Williams College</p>
-                        <p>
-                            Iam a sophomore student at Williams College intending to double major 
-                            in Computer Science and Statistics.
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
-                <p class="--year">
-                    2014 - 2019
-                </p>
-            </div>
-            <div class="col-md-7">
-                <div class="--education-details">
-                    <div class="--second-school">
-                        <h3> 
-                            O'Level and A'Level Certificates.
-                        </h3>
-                        <p class="--school">Lower Gwelo High School (Zimbabwe)</p>
-                        <p>
-                            I attained 16 distinctions at O'Level and 6 distinctions at A'Level.
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="experience">
-        <div class="--experience-heading">
-            <h3 class="--heading">Work Experience</h3>
-        </div>
 
+    <section class="work-experience" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="--work-content">
-                <div class="row">
-                    <div class="col-4">
+                <h2 class="headings work-main-heading"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+                <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <div class="col s4">
                         <div class="--work-details-left">
                             <h4 class="--work-heading">
                                 Computer Science (Data structures and advanced Programming) TA
                             </h4>
-                            <p>Sept 2022 - Present</p>
-                            <div class="--circle-briefcase">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
+                            <p class="work-date">Sept 2022 - Present</p>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col s8">
                         <div class="--work-details">
                             <h3 class="--work-place">
                                 Williams College
@@ -173,23 +126,24 @@
                                 <li>Hold office hours to answer students programming questions.</li>
                                 <li>Help students with debugging.</li>
                             </ul>
-                        </div>
-                    </div>
-    
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="--work-details-left">
-                            <h4 class="--work-heading">
-                                Student Library Desk Assistant
-                            </h4>
-                            <p>Jan 2022 - Present</p>
                             <div class="--circle-briefcase">
                                 <i class="fa-solid fa-briefcase"></i>
                             </div>
                         </div>
+                        
                     </div>
-                    <div class="col-8">
+    
+                </div>
+                <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <div class="col s4">
+                        <div class="--work-details-left">
+                            <h4 class="--work-heading">
+                                Student Library Desk Assistant
+                            </h4>
+                            <p class="work-date">Jan 2022 - Present</p>
+                        </div>
+                    </div>
+                    <div class="col s8">
                         <div class="--work-details">
                             <h3 class="--work-place">
                                 Schow Library
@@ -200,22 +154,23 @@
                                 <li>Answer directional questions, and referring reference questions to the proper staff person. </li>
                                 <li>Retrieve books from the stacks, scans material for faculty, and assists library staff in various projects such as inventory.</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="--work-details-left">
-                            <h4 class="--work-heading">
-                                Student Events Assistant
-                            </h4>
-                            <p>Sept 2021 - Present</p>
                             <div class="--circle-briefcase">
                                 <i class="fa-solid fa-briefcase"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-8">
+                </div>
+                <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <div class="col s4">
+                        <div class="--work-details-left">
+                            <h4 class="--work-heading">
+                                Student Events Assistant
+                            </h4>
+                            <p class="work-date">Sept 2021 - Present</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col s8">
                         <div class="--work-details">
                             <h3 class="--work-place">
                                 62 Center For Theater and Dance
@@ -230,678 +185,105 @@
                                         Ensure nothing is obstructing pathways or exits, and enforce theater policies
                                     </li>
                                 </ul>
+                                <div class="--circle-briefcase">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
                         </div>
                     </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="--skills-main-heading">
-            <p>What I can do</p>
-            <h3>Skills and Proficiencies</h3>
-        </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="--skills-subheading">
-                        <h4>Technical Skills</h4>
-                        <table class="--technical-skills-table">
-                            <tr>
-                                <td>
-                                    <i class="fa-brands fa-html5 skills-icon"></i> 
-                                    HTML & CSS
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="images/python-5.svg" class="small-sz" alt="python logo">
-                                    Python
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-brands fa-js skills-icon"></i>
-                                    Javascript
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="images/java.svg" class="small-sz" alt="Java logo">
-                                    Java
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="images/c-1.svg" class="small-sz" alt="C logo">
-                                    C
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-brands fa-bootstrap skills-icon"></i>
-                                    Bootstrap
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </td>
-                            </tr>
-                        </table>
+    <section class="skills" data-aos="fade-up" data-aos-duration="2000">
+        <div class="skills-container">
+            <h3 class="headings"> <i class="fa-solid fa-screwdriver-wrench"></i> Skills </h3>
+            <p class="skills-desc">// These are the technologies I have worked with.</p>
+            <div class="row" data-aos="zoom-out" data-aos-duration="2000"  data-aos-delay="500">
+                <div class="col s3 ">
+                    <div class="skill">
+                        <img src="images/bootstrap.svg" alt="bootstrap" >
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="--skills-subheading">
-                        <h4 class="--personal-heading">Personal Skills</h4>
-                        <table class="--technical-skills-table">
-                            <tr>
-                                <td>
-                                    <i class="fa-solid fa-walkie-talkie skills-icon"></i>
-                                    Communication
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-regular fa-lightbulb skills-icon"></i>
-                                    Problem solving
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-regular fa-clock skills-icon"></i>
-                                    Time management
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-solid fa-brain skills-icon"></i>
-                                    Critical thinking
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-solid fa-people-group skills-icon"></i>
-                                    Collaboration
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-solid fa-user-tie skills-icon"></i>
-                                    Professionalism
-                                </td>
-                                <td>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </td>
-                            </tr>
-                        </table>
+                <div class="col s3 ">
+                    <div class="skill">
+                        <img src="images/css3.svg" alt="css">
                     </div>
+                    
                 </div>
-            </div>
-    </section>
+                <div class="col s3 ">
+                    <div class="skill">
+                        <img src="images/html-5.svg" alt="html" />
+                    </div>
+                    
+                </div>
+                <div class="col s3 ">
+                    <div class="skill">
+                        <img src="images/react.svg" alt="react" />
+                    </div>
+                    
+                </div>
 
-    <section id="projects">
-        <div class="--projects-main-heading">
-            <h4>Sample Work</h4>
-            <p>
-                Currently working on, Turing machine simulator and Macro-economics calculator.
-                <em> (Inspired by my cognitive science and economics class, respectively.)</em>
-            </p>
-            <a href="https://github.com/leemabhena?tab=repositories"> <i class="fa-brands fa-github"></i> Github account.</a>
-            <br> <br> 
-            <div class="project-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="project">
-                                <div class="img-hover" data-which="1">
-                                    <img src="images/quizzie.png" alt="Quizzie" class="project-img">
-                                    <div class="view">
-                                        <i class="fa-regular fa-eye see q" title="preview"></i>
-                                        <a href="https://github.com/leemabhena/Quizzie">
-                                            <i class="fa-solid fa-folder-open" title="github-repository"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img-overlay"></div>
-                                </div>
-                                
-                                <a href="https://leemabhena.github.io/Quizzie/" class="project-name">Quizzie</a>
-                                <p class="short-desc">Custom trivia quiz site</p>
-                                <div class="languages">
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-js"></i>
-                                    <i class="fa-brands fa-bootstrap"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Second -->
-                        <div class="col-md-3">
-                            <div class="project ">
-                                <div class="img-hover" data-which="2">
-                                    <img src="images/pokemon.png" alt="pokemon" class="project-img">
-                                    <div class="view">
-                                        <i class="fa-regular fa-eye see" title="preview"></i>
-                                        <a href="https://github.com/leemabhena/pokemon-guessing-game">
-                                            <i class="fa-solid fa-folder-open" title="github-repository"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img-overlay"></div>
-                                </div>
-                                
-                                <a href="https://leemabhena.github.io/pokemon-guessing-game/" class="project-name">Pokemon Guessing Game</a>
-                                <p class="short-desc">Pokemon guessing game</p>
-                                <div class="languages">
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-js"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Third -->
-                        <div class="col-md-3">
-                            <div class="project">
-                                <div class="img-hover" data-which="3">
-                                    <img src="images/logahs.png" alt="Logahs" class="project-img">
-                                    <div class="view">
-                                        <i class="fa-regular fa-eye see" title="preview"></i>
-                                        <a href="https://github.com/leemabhena/logahs-education-version">
-                                            <i class="fa-solid fa-folder-open" title="github-repository"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img-overlay"></div>
-                                </div>
-                                
-                                <a href="https://github.com/leemabhena/logahs-education-version" class="project-name">Logahs Website</a>
-                                <p class="short-desc">Trial run of the school website.</p>
-                                <div class="languages">
-                                    <i class="fa-brands fa-html5"></i>
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <i class="fa-brands fa-js"></i>
-                                    <i class="fa-brands fa-bootstrap"></i>
-                                    <img src="images/nodejs-icon.svg" alt="nodejs-icon" class="small-sz" style="margin-bottom: .5rem;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- fourth -->
-                        <div class="col-md-3">
-                            <div class="project">
-                                <div class="img-hover" data-which="4">
-                                    <img src="images/100-days-of-code.png" alt="100-days-of-code" class="project-img">
-                                    <div class="view">
-                                        <i class="fa-regular fa-eye see" title="preview"></i>
-                                        <a href="https://github.com/leemabhena/100-days-of-code">
-                                            <i class="fa-solid fa-folder-open" title="github-repository"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img-overlay"></div>
-                                </div>
-                                
-                                <a href="https://leemabhena.github.io/100-days-of-code" class="project-name">100 days of code</a>
-                                <p class="short-desc">Python projects from the course</p>
-                                <div class="languages">
-                                    <img src="images/python-5.svg" alt="python-icon" class="small-sz" style="margin-bottom: .5rem;">
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col s3 ">
+                        <div class="skill">
+                            <img src="images/javascript.svg" alt="javascript" >
                         </div>
                     </div>
-                    <div class="row second-row">
-                        <!-- second row -->
-                        <div class="col-md-3">
-                            <div class="project">
-                                <div class="img-hover" data-which="5">
-                                    <img src="images/exam-scheduler.png" alt="exam-scheduler" class="project-img">
-                                    <div class="view">
-                                        <i class="fa-regular fa-eye see" title="preview"></i>
-                                        <a href="https://github.com/leemabhena/exam-scheduling-lab">
-                                            <i class="fa-solid fa-folder-open" title="github-repository"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img-overlay"></div>
-                                </div>
-                                
-                                <a href="https://github.com/leemabhena/exam-scheduling-lab" class="project-name">Exam Scheduler</a>
-                                <p class="short-desc">Uses graphs to create exam schedule</p>
-                                <div class="languages">
-                                    <img src="images/java.svg" alt="python-icon" style="margin-bottom: .5rem; height: 2rem;">
-                                </div>
-                            </div>
+                    <div class="col s3 ">
+                        <div class="skill">
+                            <img src="images/python.svg" alt="python">
                         </div>
-                        <!-- Second item -->
-                        <div class="col-md-3">
-                            <div class="project">
-                                <div class="img-hover" data-which="6">
-                                    <img src="images/cs136.png" alt="cs136" class="project-img">
-                                    <div class="view">
-                                        <i class="fa-regular fa-eye see" title="preview"></i>
-                                        <a href="https://github.com/leemabhena/cs136-labs">
-                                            <i class="fa-solid fa-folder-open" title="github-repository"></i>
-                                        </a>
-                                    </div>
-                                    <div class="img-overlay"></div>
-                                </div>
-                                
-                                <a href="https://github.com/leemabhena/cs136-labs" class="project-name">Data structures (CSCI 136 labs)</a>
-                                <p class="short-desc">Data structures and advanced programming.</p>
-                                <div class="languages">
-                                    <img src="images/java.svg" alt="python-icon" style="margin-bottom: .5rem; height: 2rem;">
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
+                    <div class="col s3 ">
+                        <div class="skill">
+                            <img src="images/java.svg" alt="java" />
+                        </div>
+                        
+                    </div>
+                    <div class="col s3 ">
+                        <div class="skill">
+                            <img src="images/c.svg" alt="c" />
+                        </div>
+                        
                     </div>
             </div>
-           
         </div>
     </section>
 
-    <div class="project-info">
-        <div class="project-details project-1" data-modal="1">
-            <h4 class="project-name-big">
-             Quizzie
-            </h4>
-            <br> <br>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-6">
-                     <div class="full-details">
-                         <p>
-                             This is a trivia site. It uses the API from the open trivia database 
-                             and it allows the user to customize the quiz, i.e build the quiz they 
-                             they are interested in. The player can create
-                             a quiz from the following options: 
-                         </p>
-                         <ul>
-                            <li>Number of questions - with the default number of questions set to 10.</li>
-                            <li>Category - player can choose from over 20 categories </li>
-                            <li>Difficulty - this has the options of easy, medium and hard </li>
-                            <li>Type - there are two types, multiple choice or boolean (true / false)</li>
-                         </ul>
-                       
-                         <div class="languages-used">
-                             <i class="fa-brands fa-html5"></i>
-                             <i class="fa-brands fa-css3-alt"></i>
-                             <i class="fa-brands fa-js"></i>
-                             <i class="fa-brands fa-bootstrap"></i>
-                         </div>
-                         <a href="https://github.com/leemabhena/Quizzie" class="open-github"><i class="fa-brands fa-github"></i> Open in Github</a>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="big-img">
-                         <img src="images/quizzie.png" alt="Quizzie">
-                     </div>
-                 </div>
-             </div>
-            </div>
-            <div class="close">
-             <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-         </div>
-<!-- second -->
-         <div class="project-details project-2" data-modal="2">
-            <h4 class="project-name-big">
-             Pokemon Guessing Game
-            </h4>
-            <br> <br>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-6">
-                     <div class="full-details">
-                         <p>
-                             How well do you know about Pokemons? Do you want to find out? 
-                             Try out this game. The game was built in collaboration with 
-                             Chris. It uses the Pokemon API in the rapidAPIs database and uses JQuery 
-                             to issue out AJAX calls.
-                         </p>
-                         <p>Rules:</p>
-                         <ol>
-                            <li>
-                                Given a pokemon picture, weight, height, abilities, weakness and 
-                                type the user is given the chance to guess the pokemon.
-                            </li> 
-                            <li>
-                                Type the answer in the checkbox and click the check 
-                                button to evaluate your answer.
-                            </li>
-                            <li>
-                                If the answer is correct the score will be updated, else
-                                a hint is given.
-                             </li>
+    <section class="projects" >
+        <h3 class="headings"> <i class="fa-solid fa-screwdriver-wrench"></i> Projects </h3>
+        <p class="projects-text">// Check out my recent work</p>
 
-                         </ol>
-                         <div class="languages-used">
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                         </div>
-                         <a href="https://github.com/leemabhena/pokemon-guessing-game" class="open-github"><i class="fa-brands fa-github"></i> Open in Github</a>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="big-img">
-                         <img src="images/pokemon.png" alt="pokemon">
-                     </div>
-                 </div>
-             </div>
-            </div>
-            <div class="close">
-             <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-         </div>
-         <!-- third -->
-         <div class="project-details project-3" data-modal="3">
-            <h4 class="project-name-big">
-             Logahs Educational Website Version
-            </h4>
-            <br> <br>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-6">
-                     <div class="full-details">
-                         <p>
-                             Created the website as part of the introduction to web development
-                             class l was teaching during the summer at (Lower Gwelo High after
-                             receiving ASIP grant from Williams College) as part of my summer 
-                             internship. The aim was that the school should have a website fully
-                             managed by students and as such they had to learn about web devopment.
-                             The actual website is currently under development and is expected to be
-                             done and running by the end of December, using django as the backend framework
-                             and react as frontend.
-                         </p>
-                         <div class="languages-used">
-                            <i class="fa-brands fa-html5"></i>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <i class="fa-brands fa-js"></i>
-                            <i class="fa-brands fa-bootstrap"></i>
-                            <img src="images/nodejs-icon.svg" alt="nodejs-icon" class="small-sz" style="margin-bottom: .5rem;">
-                         </div>
-                         <a href="https://github.com/leemabhena/logahs-education-version" class="open-github"><i class="fa-brands fa-github"></i> Open in Github</a>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="big-img">
-                         <img src="images/logahs.png" alt="Logahs website">
-                     </div>
-                 </div>
-             </div>
-            </div>
-            <div class="close">
-             <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-         </div>
-         <!-- Fourth -->
-         <div class="project-details project-4" data-modal="4">
-            <h4 class="project-name-big">
-             100 days of code projects
-            </h4>
-            <br> <br>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-6">
-                     <div class="full-details">
-                         <p>
-                            This contains all the projects from the 100 days of code 
-                            course in udemy. The course is in python, from basics to 
-                            advanced level. This is the course description from the 
-                            udemy course website : You will master the Python programming 
-                            language by building 100 unique projects over 100 days.
-                            You will learn automation, game, app and web development, 
-                            data science and machine learning all using Python.
-                            You will be able to program in Python professionally.
-                         </p>
-                         <div class="languages-used">
-                            <img src="images/python-5.svg" alt="python-icon" style="margin-bottom: .5rem; height: 1.2rem;">
-                         </div>
-                         <a href="https://github.com/leemabhena/100-days-of-code" class="open-github"><i class="fa-brands fa-github"></i> Open in Github</a>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="big-img">
-                         <img src="images/100-days-of-code.png" alt="100-days-of-code">
-                     </div>
-                 </div>
-             </div>
-            </div>
-            <div class="close">
-             <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-         </div>
-
-         <!-- fifth -->
-          <div class="project-details project-5" data-modal="5">
-            <h4 class="project-name-big">
-             Exam Scheduler
-            </h4>
-            <br> <br>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-6">
-                     <div class="full-details">
-                         <p>
-                           This program uses a bidirected graph to create the exam schedule for students with 
-                           each student taking atmost 1 exam per day with the minimal number of slots possible.
-                           Each student is supposed to take the following format: <br>
-                           <code>
-                            [name] <br>
-                            [course-1] <br>
-                            [course-2] <br>
-                            [course-3] <br>
-                            [course-4] <br>
-                           </code>
-                           For example: <br>
-                           <code>
-                            Lee Mabhena <br>
-                            CSCI 136 <br>
-                            MATH 200 <br>
-                            ENGL 201 <br>
-                            PHIL 101  <br>
-                           </code>
-                           The program outputs the number of slots with each course assigned a slot and for each student prints
-                           out a schudule. Example of how to run the code and output is shown on the right.
-                         </p>
-                         <div class="languages-used">
-                            <img src="images/java.svg" alt="java-icon" style="margin-bottom: .5rem; height: 2rem;">
-                         </div>
-                         <a href="https://github.com/leemabhena/exam-scheduling-lab" class="open-github"><i class="fa-brands fa-github"></i> Open in Github</a>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="big-img">
-                         <img src="images/schedule-output.png" alt="Exam schedule output">
-                     </div>
-                 </div>
-             </div>
-            </div>
-            <div class="close">
-             <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-         </div>
-
-         <!-- Sixth -->
-         <div class="project-details project-6" data-modal="6">
-            <h4 class="project-name-big">
-             CS136 - Data structures and advanced programming labs.
-            </h4>
-            <br> <br>
-            <div class="container">
-             <div class="row">
-                 <div class="col-md-6">
-                     <div class="full-details">
-                         <p>
-                            This directory consists of 10 labs from the data structures
-                            and advanced programming class taught in Williams College
-                            in java. More information can be found at the README of each
-                            project. 
-                         </p>
-                         <p>Summary of the labs:</p>
-                         <ol>
-                            <li>
-                                CoinStrip - uses arrays and vectors to create a simple coinstrip game
-                            </li>
-                            <li>
-                                Wordgen - uses associations to create a random writings after reading from another file.
-                            </li>
-                            <li>
-                                Recursion - uses recursion to solve problems such as subsequences, 
-                                printing in binary, checking whether a string is palindrome and many more.
-                            </li>
-                            <li>
-                                Dummylists - extends on the implementation of double linked list nodes, to use 
-                                a dummy node as the head and tail.
-                            </li>
-                            <li>
-                                Sorting - introduces to the java sorting using Comparators and Comparators, 
-                                extending a vector class to support custom sorting orders and lastly introduces
-                                sorting algorithms and their implementation in java.
-                            </li>
-                            <li>Postscript - uses stacks to create a basic postscript language interpreter.</li>
-                            <li>
-                                Twotowers - introduces the idea of iterators and their implementation in java, bit
-                                masking as a way of creating subsets. The lab then uses iterators to solve computational
-                                problems.
-
-                            </li>
-                            <li>Lexicon - using a trie implemented a spelling corrector. I implemented a highly efficient Lexicon class 
-                                 with functionality to suggest spelling corrections for misspelled words.
-                            </li>
-                            <li>
-                                Diff - uses the hashtable and hash functions to implement diff keyword like the one in unix commandline
-                                to find difference between files.
-                            </li>
-                            <li>
-                                Exam Scheduling - uses graphs to create exam schedule for students, avoiding schedule clashes and
-                                each student taking atmost 1 exam per day.
-                            </li>
-                         </ol>
-                         <div class="languages-used">
-                            <img src="images/java.svg" alt="java-icon" style="margin-bottom: .5rem; height: 2rem;">
-                         </div>
-                         <a href="https://github.com/leemabhena/cs136-labs" class="open-github"><i class="fa-brands fa-github"></i> Open in Github</a>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="big-img">
-                         <img src="images/cs136.png" alt="Data structures lab">
-                     </div>
-                 </div>
-             </div>
-            </div>
-            <div class="close">
-             <i class="fa-regular fa-circle-xmark"></i>
-            </div>
-         </div>
-
-
-
-
-    </div>
-
-    <footer id="contact">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="--footer-img">
-                    <img src="images/contact.jpg" alt="Reach out">
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="--contact-details">
-                    <h5>Reach Out</h5>
-                    <p class="--name">Liberty (Lee) Mabhena</p>
-                    <p class="--email">lnm1@williams.edu</p>
-                    <hr class="--rule">
-                    <h6>Connect With Me</h6>
-                    <div class="--social-media-icons">
-                        <a href="https://www.instagram.com/lam_liberty/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/liberty.mabhena.56">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/liberty-lee-mabhena-466259178/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
+        <div class="projects-contents">
+            <div class="row project-container">
             </div>
         </div>
+
+        <div class="--modal">
+
+        </div>
+        <div class="--modal-overlay"></div>
+    </section>
+
+    <section class="contact" data-aos="fade-up" data-aos-duration="2000">
+        <div class="contact-details">
+            <h3 class="headings"> <i class="fa-solid fa-phone-volume"></i> Contact</h3>
+            <p><i class="fa-solid fa-envelope"></i> lnm1@williams.edu</p>
+            <form action="" autocomplete="off">
+                <input type="email" name="email" placeholder="Email" required id="email">
+                <input type="text" name="subject" placeholder="Subject" required id="subject">
+                <label for="message" class="message-label"></label>
+                <textarea name="message" cols="30" rows="30" id="message">
+                </textarea>
+                <button class="send-message" type="button"><i class="fa-solid fa-paper-plane"></i> Get in touch </button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with &nbsp;  <i class="fa-solid fa-heart"></i> &nbsp; by Lee Mabhena.</p>
     </footer>
-    <!-- js -->
-    <script src="script.js"></script>
 </body>
 </html>
