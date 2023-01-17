@@ -1,14 +1,12 @@
-
-
 const projects = [
-    {
-        id: 1,
-        name: "Quzzie",
-        desc: "Custom trivia site",
-        img: "quizzie.png",
-        url: "https://leemabhena.github.io/Quizzie/",
-        github: "https://github.com/leemabhena/Quizzie",
-        details: `
+  {
+    id: 1,
+    name: "Quzzie",
+    desc: "Custom trivia site",
+    img: "quizzie.png",
+    url: "https://leemabhena.github.io/Quizzie/",
+    github: "https://github.com/leemabhena/Quizzie",
+    details: `
         <p> This is a trivia site.
         It uses the API from the open trivia database and it allows the user to customize the quiz, i.e build the quiz they they are interested in. 
         The player can create a quiz from the following options:
@@ -19,20 +17,17 @@ const projects = [
             <li>Difficulty - this has the options of easy, medium and hard.</li>
             <li>Type - there are two types, multiple choice or boolean (true / false)</li>
         </ul>
-        ` ,
-        languages: [
-            'bootstrap.svg', 'html-5.svg', 'javascript.svg', 'css3.svg'
-        ]
-
-    },
-    {   
-        id: 2,
-        name: "Pokemon Guessing Game",
-        desc: "Pokemon guessing game",
-        img: "pokemon.png",
-        url: "https://leemabhena.github.io/pokemon-guessing-game/",
-        github: "https://github.com/leemabhena/pokemon-guessing-game",
-        details: `
+        `,
+    languages: ["bootstrap.svg", "html-5.svg", "javascript.svg", "css3.svg"],
+  },
+  {
+    id: 2,
+    name: "Pokemon Guessing Game",
+    desc: "Pokemon guessing game",
+    img: "pokemon.png",
+    url: "https://leemabhena.github.io/pokemon-guessing-game/",
+    github: "https://github.com/leemabhena/pokemon-guessing-game",
+    details: `
         <p> How well do you know about Pokemons? Do you want to find out? Try out this game. 
         The game was built in collaboration with Chris. 
         It uses the Pokemon API in the rapidAPIs database and uses JQuery to issue out AJAX calls.
@@ -43,18 +38,16 @@ const projects = [
             <li>If the answer is correct the score will be updated, else a hint is given.</li>
         </ul>
         `,
-        languages : [
-            'html-5.svg', 'css3.svg', 'javascript.svg'
-        ]
-    },
-    {   
-        id: 3,
-        name: "100 days of code",
-        desc: "Python projects from course",
-        img: "100-days-of-code.png",
-        url: "",
-        github: "https://github.com/leemabhena/100-days-of-code",
-        details: `
+    languages: ["html-5.svg", "css3.svg", "javascript.svg"],
+  },
+  {
+    id: 3,
+    name: "100 days of code",
+    desc: "Python projects from course",
+    img: "100-days-of-code.png",
+    url: "",
+    github: "https://github.com/leemabhena/100-days-of-code",
+    details: `
         <p>
         This contains all the projects from the 100 days of code course in udemy. 
         The course is in python, from basics to advanced level. 
@@ -65,18 +58,16 @@ const projects = [
         You will be able to program in Python professionally'.
         </p>
         `,
-        languages : [
-            'python.svg',
-        ]
-    },
-    {   
-        id: 4,
-        name: "Exam Scheduler",
-        desc: "Uses graphs to create exam schedule",
-        img: "exam-scheduler.png",
-        url: "",
-        github: "https://github.com/leemabhena/exam-scheduling-lab",
-        details: `
+    languages: ["python.svg"],
+  },
+  {
+    id: 4,
+    name: "Exam Scheduler",
+    desc: "Uses graphs to create exam schedule",
+    img: "exam-scheduler.png",
+    url: "",
+    github: "https://github.com/leemabhena/exam-scheduling-lab",
+    details: `
         <p>
         This program uses a bidirected graph to create the exam schedule for 
         students with each student taking atmost 1 exam per day with the minimal
@@ -98,18 +89,16 @@ const projects = [
          is shown on the right.
         </p>
         `,
-        languages : [
-            'java.svg',
-        ]
-    },
-    {   
-        id: 5,
-        name: "Data Structures (CS136 Labs)",
-        desc: "Data structures and advanced programming.",
-        img: "cs136.png",
-        url: "",
-        github: "https://github.com/leemabhena/cs136-labs",
-        details: `
+    languages: ["java.svg"],
+  },
+  {
+    id: 5,
+    name: "Data Structures (CS136 Labs)",
+    desc: "Data structures and advanced programming.",
+    img: "cs136.png",
+    url: "",
+    github: "https://github.com/leemabhena/cs136-labs",
+    details: `
         <p>
         This directory consists of 10 labs from the data structures and advanced 
         programming class taught in Williams College in java. More information can 
@@ -155,10 +144,33 @@ const projects = [
 
         </ol>
         `,
-        languages : [
-            'java.svg',
-        ]
-    }
-]
+    languages: ["java.svg"],
+  },
+  {
+    id: 6,
+    name: "School Website",
+    desc: "High School Website.",
+    img: "logahs.png",
+    url: "",
+    github: "https://github.com/leemabhena/logahs-website",
+    details: ` 
+    <p> 
+    Developed a website for a high school using React for the frontend and Django for
+    the backend.Utilized the fetch API to send HTTP requests and retrieve data from the Django server.
+    Implemented user authentication and authorization for secure access to certain sections of the website.
+    Used the Django Rest Framework to design and query the database for various types
+    of school information, including events, staff directories, and course offerings. Created
+    a dynamic calendar feature to display upcoming events and allowed users to filter events by category.
+    </p>
+    `,
+    languages: [
+      "react.svg",
+      "javascript.svg",
+      "html-5.svg",
+      "css3.svg",
+      "django.svg",
+    ],
+  },
+];
 
 export default projects;

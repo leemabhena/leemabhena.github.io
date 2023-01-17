@@ -32,7 +32,7 @@ navContainerEl.addEventListener("click", (e) => {
   }
 })
 
-// sidebar navigation
+// sidebar navigationx
 $(document).ready(function(){
   $('.sidenav').sidenav();
 });
