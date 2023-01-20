@@ -171,6 +171,54 @@ const projects = [
       "django.svg",
     ],
   },
+  {
+    id: 7,
+    name: "Crypto",
+    desc: "Cryptography site",
+    img: "crypto.png",
+    url: "https://leemabhena.github.io/crypto/",
+    github: "https://github.com/leemabhena/crypto",
+    details: ` 
+    <p> 
+    Recently l have been working on a  cryptography website project that aims 
+    to provide users with a comprehensive and interactive learning experience in 
+    the field of cryptography. The project include several functionalities such as:
+    </p>
+    <ol>
+    <li>
+        Image Steganography: This functionality would allow users to hide a secret message 
+        within an image using least significant bit (LSB) and masking. Users would be able to 
+        enter a message, and the program will hide the message in the image. They would then be
+        able to download the modified image with the hidden message. Using the same site they are
+        able to upload the modified image and this will decrypt the message and print it out to the screen.
+    </li>
+    <li> 
+        Enigma Machine Simulator: This functionality would allow users to experience the historical 
+        Enigma Machine, which was used by the German military during WWII to encrypt communications.
+        Users would be able to choose from different Enigma models, set the machine's settings, and 
+        encrypt/decrypt messages using the machine's encryption algorithm.
+    </li>
+    <li>
+        Caesar Cipher: This functionality would allow users to encrypt/decrypt messages using
+        the Caesar Cipher, one of the simplest and most widely known encryption techniques.
+        Users would be able to enter a message and a shift value, and the website would then 
+        encrypt/decrypt the message accordingly.
+    </li>
+    <li>
+        Vigenere Cipher: This functionality would allow users to encrypt/decrypt messages using 
+        the Vigenere Cipher, a more advanced encryption technique than the Caesar Cipher. Users 
+        would be able to enter a message and a keyword, and the website would then encrypt/decrypt 
+        the message using the Vigenere Cipher algorithm.
+    </li>
+    </ol>
+    <p>
+        The website  is designed to be user-friendly and interactive, with clear instructions and 
+        examples provided for each functionality. It would be a great resource for anyone interested 
+        in cryptography, whether they are students, hobbyists, or professionals.
+    </p>
+    `,
+    languages: ["javascript.svg", "html-5.svg", "css3.svg"],
+  },
 ];
 
 export default projects;
