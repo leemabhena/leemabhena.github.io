@@ -526,6 +526,10 @@ footer {
   opacity: 1;
   visibility: visible;
 }
+
+.justify {
+  text-align: justify;
+}
 /* Heart beat animation */
 @keyframes beat {
   to {

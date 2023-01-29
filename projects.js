@@ -219,6 +219,33 @@ const projects = [
     `,
     languages: ["javascript.svg", "html-5.svg", "css3.svg"],
   },
+  {
+    id: 8,
+    name: "Netflix Dashboard",
+    desc: "Netflix dashboard using tableau.",
+    img: "netflix.png",
+    url: "https://public.tableau.com/app/profile/liberty3101/viz/NetflixDashboard_16749591569340/Netflix?publish=yes",
+    github:
+      "https://public.tableau.com/app/profile/liberty3101/viz/NetflixDashboard_16749591569340/Netflix?publish=yes",
+    details: `
+       <p class = 'justify'> 
+       The project is a Tableau dashboard that visualizes streaming data from Netflix, using data from Kaggle. 
+       The dashboard include a variety of charts and tables that allow users to explore trends and patterns 
+       in the data, such as the most popular shows and movies, the countries where Netflix is most popular, and 
+       the demographics of Netflix users.
+       The dashboard is interactive, allowing users to filter and drill down into the data to gain deeper 
+       insights. For example, users are be able to see the description of each movie, genre, date it was added,
+       its release date, its rating and its duration.
+       The data used in this project is sourced from a Kaggle dataset that contains information about 
+       Netflix's programming, including the title, release date, and ratings for each show and movie. 
+       The data is first cleaned and preprocessed to ensure that it is in a format that is compatible with
+       Tableau, and then is loaded into the dashboard.
+       Overall, this project aims to provide a comprehensive, user-friendly visualization of Netflix's 
+       streaming data, allowing users to gain insights into the company's programming and audience trends.
+       </p>
+        `,
+    languages: ["tableau.svg"],
+  },
 ];
 
 export default projects;
