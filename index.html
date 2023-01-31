@@ -1,289 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lee Mabhena | Portfolio</title>
     <script defer src="script.js" type="module"></script>
 
     <!-- Materialize -->
 
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
-     <!-- favicon -->
-     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-     <link rel="manifest" href="images/favicon_io/site.webmanifest">
-     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-     <!-- rough animation -->
-     <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <!-- rough animation -->
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
 
-     <!-- GSAP -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
-     <!-- Typed js -->
-     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!-- animate on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     
-</head>
-<body>
+  </head>
+  <body>
     <section class="hero">
-        <nav>
-            <div class="nav-wrapper">
-              <a href="" class="brand-logo logo">Port<span>folio</span></a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down nav-container">
-                <!-- <li class="nav-btn">Education</li> -->
-                <li class="nav-btn">Experience</li>
-                <li class="nav-btn">Skills</li>
-                <li class="nav-btn">Projects</li>
-                <li class="nav-btn">Contact</li>
-              </ul>
-            </div>
-          </nav>
-        
-          <ul class="sidenav sidenav-close" id="mobile-demo">
-            <!-- <li>Education</li> -->
-            <li>Experience</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo logo">Port<span>folio</span></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down nav-container">
+            <!-- <li class="nav-btn">Education</li> -->
+            <li class="nav-btn">Experience</li>
+            <li class="nav-btn">Skills</li>
+            <li class="nav-btn">Projects</li>
+            <li class="nav-btn">Contact</li>
           </ul>
+        </div>
+      </nav>
 
-        <div class="intro">
-            <p class="hi-text hero-p">Hi my name is,</p>
-            <p class="name hero-p">Liberty (Lee) Mabhena</p>
-            <p class="courses hero-p">Computer Science | Statistics</p>
-            <p class="desc-text hero-p">
-                I am a student intending to double major in computer science and statistics. 
-                I am excited to be at this point in my academic career, as I have already gained 
-                a strong foundation in both of my major fields and am now able to delve deeper into 
-                more advanced coursework. My passion for computer science began when I first learned 
-                about coding and the power it has to solve problems and create innovative solutions. 
-                Similarly, my interest in statistics developed as I learned about the role it plays in
-                making data-driven decisions and understanding complex phenomena. I am eager to continue
-                my studies in both computer science and statistics, and to explore the ways in which these 
-                disciplines can work together to address real-world challenges.
-            </p>
-            <button class="view-work hero-p">View Work <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="social-media-icons">
-            <ul>
-                <li class="social-icon in"> <a href="https://www.linkedin.com/in/liberty-lee-mabhena-466259178/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li class="social-icon gt"><a href=" https://github.com/leemabhena"><i class="fa-brands fa-github"></i></a></li>
-                <li class="social-icon fb"><a href="https://www.facebook.com/liberty.mabhena.56/"><i class="fa-brands fa-facebook"></i></a></li>
-                <li class="social-icon mail"><i class="fa-solid fa-envelope"></i> <span>lnm1@williams.edu</span></li>
-            </ul>
-        </div>
-       
+      <ul class="sidenav sidenav-close" id="mobile-demo">
+        <!-- <li>Education</li> -->
+        <li>Experience</li>
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+
+      <div class="intro">
+        <p class="hi-text hero-p">Hi my name is,</p>
+        <p class="name hero-p">Liberty (Lee) Mabhena</p>
+        <p class="courses hero-p">Computer Science | Statistics</p>
+        <p class="desc-text hero-p">
+          I am a student intending to double major in computer science and
+          statistics. I am excited to be at this point in my academic career, as
+          I have already gained a strong foundation in both of my major fields
+          and am now able to delve deeper into more advanced coursework. My
+          passion for computer science began when I first learned about coding
+          and the power it has to solve problems and create innovative
+          solutions. Similarly, my interest in statistics developed as I learned
+          about the role it plays in making data-driven decisions and
+          understanding complex phenomena. I am eager to continue my studies in
+          both computer science and statistics, and to explore the ways in which
+          these disciplines can work together to address real-world challenges.
+        </p>
+        <button class="view-work hero-p">
+          View Work <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="social-media-icons">
+        <ul>
+          <li class="social-icon in">
+            <a href="https://www.linkedin.com/in/liberty-lee-mabhena-466259178/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="social-icon gt">
+            <a href=" https://github.com/leemabhena"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li class="social-icon fb">
+            <a href="https://www.facebook.com/liberty.mabhena.56/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li class="social-icon mail">
+            <i class="fa-solid fa-envelope"></i> <span>lnm1@williams.edu</span>
+          </li>
+        </ul>
+      </div>
     </section>
-  
+
     <!-- <section class="education">
         <div class="education-details">
             <h3 class="headings"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
         </div>
     </section> -->
 
-    <section class="work-experience" data-aos="fade-up" data-aos-duration="2000">
-        <div class="container">
-            <div class="--work-content">
-                <h2 class="headings work-main-heading"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
-                <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div class="col s4">
-                        <div class="--work-details-left">
-                            <h4 class="--work-heading">
-                                Computer Science (Data structures and advanced Programming) TA
-                            </h4>
-                            <p class="work-date">Sept 2022 - Present</p>
-                        </div>
-                    </div>
-                    <div class="col s8">
-                        <div class="--work-details">
-                            <h3 class="--work-place">
-                                Williams College
-                            </h3>
-                            <ul>
-                                <li>Grade computer programming labs.</li>
-                                <li>Hold office hours to answer students programming questions.</li>
-                                <li>Help students with debugging.</li>
-                            </ul>
-                            <div class="--circle-briefcase">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-                </div>
-                <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div class="col s4">
-                        <div class="--work-details-left">
-                            <h4 class="--work-heading">
-                                Student Library Desk Assistant
-                            </h4>
-                            <p class="work-date">Jan 2022 - Present</p>
-                        </div>
-                    </div>
-                    <div class="col s8">
-                        <div class="--work-details">
-                            <h3 class="--work-place">
-                                Schow Library
-                            </h3>
-                            <ul>
-                                <li>Assist in opening and closing the library.</li>
-                                <li>Check in and out materials and assisting patrons in locating materials.</li>
-                                <li>Answer directional questions, and referring reference questions to the proper staff person. </li>
-                                <li>Retrieve books from the stacks, scans material for faculty, and assists library staff in various projects such as inventory.</li>
-                            </ul>
-                            <div class="--circle-briefcase">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
-                    <div class="col s4">
-                        <div class="--work-details-left">
-                            <h4 class="--work-heading">
-                                Student Events Assistant
-                            </h4>
-                            <p class="work-date">Sept 2021 - Present</p>
-                            
-                        </div>
-                    </div>
-                    <div class="col s8">
-                        <div class="--work-details">
-                            <h3 class="--work-place">
-                                62 Center For Theater and Dance
-                            </h3>
-
-                                <ul>
-                                    <li>Greet patrons and scan tickets.</li>
-                                    <li>
-                                        Answer various questions, guide patrons to seats and distribute programs.
-                                    </li>
-                                    <li>
-                                        Ensure nothing is obstructing pathways or exits, and enforce theater policies
-                                    </li>
-                                </ul>
-                                <div class="--circle-briefcase">
-                                    <i class="fa-solid fa-briefcase"></i>
-                                </div>
-                        </div>
-                    </div>
+    <section
+      class="work-experience"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="container">
+        <div class="--work-content">
+          <h2 class="headings work-main-heading">
+            <i class="fa-solid fa-briefcase"></i> Work Experience
+          </h2>
+          <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="col s4">
+              <div class="--work-details-left">
+                <h4 class="--work-heading">
+                  Computer Science (Data structures and advanced Programming) TA
+                </h4>
+                <p class="work-date">Sept 2022 - Present</p>
+              </div>
             </div>
+            <div class="col s8">
+              <div class="--work-details">
+                <h3 class="--work-place">Williams College</h3>
+                <ul>
+                  <li>Grade computer programming labs.</li>
+                  <li>
+                    Hold office hours to answer students programming questions.
+                  </li>
+                  <li>Help students with debugging.</li>
+                </ul>
+                <div class="--circle-briefcase">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="col s4">
+              <div class="--work-details-left">
+                <h4 class="--work-heading">Student Library Desk Assistant</h4>
+                <p class="work-date">Jan 2022 - Present</p>
+              </div>
+            </div>
+            <div class="col s8">
+              <div class="--work-details">
+                <h3 class="--work-place">Schow Library</h3>
+                <ul>
+                  <li>Assist in opening and closing the library.</li>
+                  <li>
+                    Check in and out materials and assisting patrons in locating
+                    materials.
+                  </li>
+                  <li>
+                    Answer directional questions, and referring reference
+                    questions to the proper staff person.
+                  </li>
+                  <li>
+                    Retrieve books from the stacks, scans material for faculty,
+                    and assists library staff in various projects such as
+                    inventory.
+                  </li>
+                </ul>
+                <div class="--circle-briefcase">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div class="col s4">
+              <div class="--work-details-left">
+                <h4 class="--work-heading">Student Events Assistant</h4>
+                <p class="work-date">Sept 2021 - Present</p>
+              </div>
+            </div>
+            <div class="col s8">
+              <div class="--work-details">
+                <h3 class="--work-place">62 Center For Theater and Dance</h3>
+
+                <ul>
+                  <li>Greet patrons and scan tickets.</li>
+                  <li>
+                    Answer various questions, guide patrons to seats and
+                    distribute programs.
+                  </li>
+                  <li>
+                    Ensure nothing is obstructing pathways or exits, and enforce
+                    theater policies
+                  </li>
+                </ul>
+                <div class="--circle-briefcase">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="skills" data-aos="fade-up" data-aos-duration="2000">
-        <div class="skills-container">
-            <h3 class="headings"> <i class="fa-solid fa-screwdriver-wrench"></i> Skills </h3>
-            <p class="skills-desc">// These are the technologies I have worked with.</p>
-            <div class="row" data-aos="zoom-out" data-aos-duration="2000"  data-aos-delay="500">
-                <div class="col s3 ">
-                    <div class="skill">
-                        <img src="images/bootstrap.svg" alt="bootstrap" >
-                    </div>
-                </div>
-                <div class="col s3 ">
-                    <div class="skill">
-                        <img src="images/css3.svg" alt="css">
-                    </div>
-                    
-                </div>
-                <div class="col s3 ">
-                    <div class="skill">
-                        <img src="images/html-5.svg" alt="html" />
-                    </div>
-                    
-                </div>
-                <div class="col s3 ">
-                    <div class="skill">
-                        <img src="images/react.svg" alt="react" />
-                    </div>
-                    
-                </div>
-
-                <div class="row">
-                    <div class="col s3 ">
-                        <div class="skill">
-                            <img src="images/javascript.svg" alt="javascript" >
-                        </div>
-                    </div>
-                    <div class="col s3 ">
-                        <div class="skill">
-                            <img src="images/python.svg" alt="python">
-                        </div>
-                        
-                    </div>
-                    <div class="col s3 ">
-                        <div class="skill">
-                            <img src="images/java.svg" alt="java" />
-                        </div>
-                        
-                    </div>
-                    <div class="col s3 ">
-                        <div class="skill">
-                            <img src="images/c.svg" alt="c" />
-                        </div>
-                        
-                    </div>
-            </div>
-        </div>
+      <div class="skills-container">
+        <h3 class="headings">
+          <i class="fa-solid fa-screwdriver-wrench"></i> Skills
+        </h3>
+        <p class="skills-desc">
+          // These are the technologies I have worked with.
+        </p>
+        <div
+          class="row"
+          data-aos="zoom-out"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+          id="skillsList"
+        ></div>
+      </div>
     </section>
 
-    <section class="projects" >
-        <h3 class="headings"> <i class="fa-solid fa-screwdriver-wrench"></i> Projects </h3>
-        <p class="projects-text">// Check out my recent work</p>
+    <section class="projects">
+      <h3 class="headings">
+        <i class="fa-solid fa-screwdriver-wrench"></i> Projects
+      </h3>
+      <p class="projects-text">// Check out my recent work</p>
 
-        <div class="projects-contents">
-            <div class="row project-container">
-            </div>
-        </div>
+      <div class="projects-contents">
+        <div class="row project-container"></div>
+      </div>
 
-        <div class="--modal">
-
-        </div>
-        <div class="--modal-overlay"></div>
+      <div class="--modal"></div>
+      <div class="--modal-overlay"></div>
     </section>
 
     <section class="contact" data-aos="fade-up" data-aos-duration="2000">
-        <div class="contact-details">
-            <h3 class="headings"> <i class="fa-solid fa-phone-volume"></i> Contact</h3>
-            <p><i class="fa-solid fa-envelope"></i> lnm1@williams.edu</p>
-            <form action="" autocomplete="off">
-                <input type="email" name="email" placeholder="Email" required id="email">
-                <input type="text" name="subject" placeholder="Subject" required id="subject">
-                <label for="message" class="message-label"></label>
-                <textarea name="message" cols="30" rows="30" id="message">
-                </textarea>
-                <button class="send-message" type="button"><i class="fa-solid fa-paper-plane"></i> Get in touch </button>
-
-            </form>
-        </div>
+      <div class="contact-details">
+        <h3 class="headings">
+          <i class="fa-solid fa-phone-volume"></i> Contact
+        </h3>
+        <p><i class="fa-solid fa-envelope"></i> lnm1@williams.edu</p>
+        <form action="" autocomplete="off">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            id="email"
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+            id="subject"
+          />
+          <label for="message" class="message-label"></label>
+          <textarea name="message" cols="30" rows="30" id="message"> </textarea>
+          <button class="send-message" type="button">
+            <i class="fa-solid fa-paper-plane"></i> Get in touch
+          </button>
+        </form>
+      </div>
     </section>
 
     <footer>
-        <p>Made with &nbsp;  <i class="fa-solid fa-heart"></i> &nbsp; by Lee Mabhena.</p>
+      <p>
+        Made with &nbsp; <i class="fa-solid fa-heart"></i> &nbsp; by Lee
+        Mabhena.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
