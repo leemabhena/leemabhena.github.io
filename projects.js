@@ -246,6 +246,45 @@ const projects = [
         `,
     languages: ["tableau.svg"],
   },
+  {
+    id: 9,
+    name: "Covid Dashboard",
+    desc: "Covid dashboard using tableau and HTML.",
+    img: "covid-dashboard.png",
+    url: "https://leemabhena.github.io/Covid-dashboard/",
+    github: "https://github.com/leemabhena/Covid-dashboard",
+    details: `
+       <p class = 'justify'> 
+       The Covid Dashboard is an interactive data visualization tool 
+       that provides a comprehensive overview of the impact of the novel 
+       coronavirus (COVID-19) pandemic. This dashboard is built using Tableau, 
+       a powerful data visualization software, and HTML, a markup language used to build web pages.
+
+       The dashboard focuses on three key areas: deaths, cases, and vaccinations. 
+       With regards to deaths, the dashboard provides information on the number of 
+       confirmed COVID-19 related deaths, as well as the case fatality rate (CFR) and 
+       the daily death count. In terms of cases, the dashboard displays the number of 
+       confirmed cases, the growth rate of cases, and the rate of hospitalization. 
+       The vaccination section of the dashboard provides information on the number of doses 
+       administered, the distribution of vaccinations by region, and the progress towards 
+       achieving herd immunity.
+       
+       The user-friendly interface allows for easy navigation, with interactive charts 
+       and graphs that allow users to explore the data in-depth.
+       
+       The Covid Dashboard is designed to meet the needs of both individual 
+       users and organizations. For individual users, it provides a quick and easy 
+       way to stay informed about the spread of the virus and the progress towards 
+       controlling it. For organizations, it offers valuable insights that can be used 
+       to inform decision-making, respond to the pandemic, and protect their employees and customers.
+       
+       Overall, the Covid Dashboard represents a valuable resource for anyone seeking 
+       to understand the impact of the pandemic on a global and local scale, and to 
+       stay informed about the progress towards controlling the spread of the virus.
+       </p>
+        `,
+    languages: ["tableau.svg", "html-5.svg"],
+  },
 ];
 
 export default projects;
